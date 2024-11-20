@@ -8,3 +8,7 @@
 test 데이터 평가시, rect로 변환하여 eval을 진행하길래 yolo 모델을 써볼까 했는데, imagenet pretrained가 아니라 못씀
 
 스케쥴러도 추가해야함
+
+
+CRAFT 학습시켜 보았으나, 성능이 굉장히 나쁘고, 학습 시간도 오래걸림.
+EAST와 YOLO로 해야할듯..
