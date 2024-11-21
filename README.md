@@ -14,8 +14,9 @@
 - Baseline(EAST), CRAFT, YOLOv11 학습
 - CRAFT 학습시켜 보았으나, 성능이 굉장히 나쁘고, 학습 시간도 오래걸림. 아무것도 예측을 안하고, 오픈소스로 공개된 가중치는 25000에폭 이상 학습시킨 모델이라 학습하기 힘들다고 판단.
 - 아래 사진들을 보았을 때, 이미지 증강 시, 좌우 반전 및 90도 회전 필수.
-![1119_좌우반전](https://github.com/user-attachments/assets/82dac4d9-f883-416d-b85e-0a3b7292cad2)
-![1125_수직](https://github.com/user-attachments/assets/e2d1c3d1-5ae1-4b6a-ae0a-db2aeff4f71c)
+  ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
+  ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
+
 
 ### 3. Instructions
 
