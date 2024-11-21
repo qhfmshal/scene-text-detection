@@ -32,7 +32,7 @@ ICDAR2107-MLT-Aug
 | 실험 3 | 0.0000 | 0.0000 |
 
 ### 3. Instructions
-- EAST 학습 코드
-- CRAFT 학습 코드
-- YOLOv11 학습 코드
+- EAST 학습 코드 및 yaml 형태
+- CRAFT 학습 코드 및 yaml 형태
+- YOLOv11 학습 코드 및 yaml 형태
 ### 4. Approach
