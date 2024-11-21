@@ -32,7 +32,7 @@ ICDAR2107-MLT-Aug
 | 실험 3 | 0.0000 | 0.0000 |
 
 ### 3. Instructions
-- EAST 학습
-- CRAFT 학습
-- YOLOv11 학습
+- EAST 학습 코드
+- CRAFT 학습 코드
+- YOLOv11 학습 코드
 ### 4. Approach
