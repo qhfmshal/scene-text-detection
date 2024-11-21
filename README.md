@@ -16,6 +16,14 @@
   ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
   ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
 
+ICDAR2107-MLT
+| 이름   | yolo | EAST  |
+|--------|------|--------|
+| 실험 1 | 0.0000 | 0.0000 |
+| 실험 2 | 0.0000 | 0.0000 |
+| 실험 3 | 0.0000 | 0.0000 |
+
+ICDAR2107-MLT-Aug
 | 이름   | yolo | EAST  |
 |--------|------|--------|
 | 실험 1 | 0.0000 | 0.0000 |
