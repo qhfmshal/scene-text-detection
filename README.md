@@ -8,10 +8,8 @@
   
 - Baseline은 EAST 모델.
   
-- 평가 코드를 보았을 때, polygon이 아니라 rect로 평가하는 것을 확인. 따라서 YOLO도 사용가능하며, ufo 데이터를 rect로 바꿔서 진행.
+- 평가 코드를 보았을 때, polygon이 아니라 rect로 평가하는 것을 확인. ufo 데이터를 적절히 바꿔서 진행.
   
-- scene text detetion 모델로 유명한 CRAFT도 학습 실행.
-
 ### 2. Experimental results
 
 - 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
