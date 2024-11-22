@@ -23,7 +23,7 @@ train.py에 validation loss를 계산하는 코드 추가.
 
 학습 코드 예시
 ```bash
-python train.py --train_data_dir /content/ICDAR2017_MLT_aug/Train --val_data_dir /content/ICDAR2017_MLT_aug/Validation
+python train.py --train_data_dir /data/Train --val_data_dir /data/Validation
 ```
 
 추론 코드 예시
