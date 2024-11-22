@@ -1,3 +1,4 @@
+# 데이터를 회전, 반전시키고 그에 따른 gt파일 처리. gt 파일로부터 YOLO 데이터셋 생성
 import os
 import json
 import os.path as osp
