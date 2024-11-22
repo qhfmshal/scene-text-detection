@@ -1,4 +1,3 @@
-# Baseline에서 바뀐 부분. Validation Loss를 계산하고 best 모델과 latest모델을 저장하도록 변경.
 import os
 import os.path as osp
 import time
@@ -40,9 +39,6 @@ def parse_args():
     parser.add_argument('--model_dir', type=str, default=os.environ.get('SM_MODEL_DIR',
                                                                         'trained_models'))
 
-    parser.add_argument('--pretrained', type=str, default = 'train')
-
-
     parser.add_argument('--device', default='cuda' if cuda.is_available() else 'cpu')
     parser.add_argument('--num_workers', type=int, default=4)
 
@@ -61,7 +57,7 @@ def parse_args():
     return args
 
 
-def do_training(train_data_dir, val_data_dir, model_dir, pretrained, device, num_workers, image_size, input_size,  batch_size,
+def do_training(train_data_dir, val_data_dir, model_dir, device, image_size, input_size, num_workers, batch_size,
                 learning_rate, max_epoch, save_interval):
 
     seed_everything(12)
@@ -80,18 +76,11 @@ def do_training(train_data_dir, val_data_dir, model_dir, pretrained, device, num
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = EAST()
-
-    if pretrained == 'pretrained' :
-      weights_path = os.path.join(model_dir,'best.pth')
-      model.load_state_dict(torch.load(weights_path))
-      
-    elif pretrained == 'resume' :
-      weights_path = os.path.join(model_dir,'latest.pth')
-      model.load_state_dict(torch.load(weights_path))
-
     model.to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     scheduler = lr_scheduler.MultiStepLR(optimizer, milestones=[max_epoch // 2], gamma=0.1)
+
+    
 
     model.train()
     for epoch in range(max_epoch):
@@ -115,7 +104,7 @@ def do_training(train_data_dir, val_data_dir, model_dir, pretrained, device, num
                     'IoU loss': extra_info['iou_loss']
                 }
                 pbar.set_postfix(Train_dict)
-                
+
         scheduler.step()
 
         print('Mean loss: {:.4f} | Elapsed time: {}'.format(
@@ -136,16 +125,16 @@ def do_training(train_data_dir, val_data_dir, model_dir, pretrained, device, num
             if best_val_loss > mean_val_loss:
               best_val_loss = mean_val_loss
               best_val_loss_epoch = epoch+1
-              ckpt_path = osp.join(model_dir, 'best.pth')
-              torch.save(model.state_dict(), ckpt_path)
+              ckpt_fpath = osp.join(model_dir, 'best.pth')
+              torch.save(model.state_dict(), ckpt_fpath)
 # =================================================================================
-        print('Best loss: {:.4f} | Epoch: {}'.format(best_val_loss,best_val_loss_epoch))
+        print('Best loss: {:.4f} | Epoch: {}'.format(best_val_loss,epoch + 1))
         if (epoch + 1) % save_interval == 0:
             if not osp.exists(model_dir):
                 os.makedirs(model_dir)
 
-            ckpt_path = osp.join(model_dir, 'latest.pth')
-            torch.save(model.state_dict(), ckpt_path)
+            ckpt_fpath = osp.join(model_dir, 'latest.pth')
+            torch.save(model.state_dict(), ckpt_fpath)
 
 
 def main(args):
