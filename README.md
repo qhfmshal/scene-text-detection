@@ -39,11 +39,12 @@ ICDAR2017-MLT
 | 100 epoch | 0.7277 | 0.3753 |
 
 ICDAR2017-MLT-Aug
+(base는 epoch 100, batch size 16)
 |    | base | mixup  | cos_lr | batch 32 |
 |:------:|:------:|:------:|:------:|:------:|
 | YOLOv11n | 0.7313 | 0.7255 |      |      |
 | YOLOv11s | 0.7255 | 0.0000 |      |      |
-(base는 epoch 100, batch size 16)
+
 ### 3. Instructions
 - EAST 학습 코드 및 yaml 형태
 - CRAFT 학습 코드 및 yaml 형태
