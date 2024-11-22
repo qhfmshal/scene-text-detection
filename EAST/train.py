@@ -1,3 +1,4 @@
+# Baseline에서 바뀐 부분. Validation Loss를 계산하고 best 모델과 latest모델을 저장하도록 변경.
 import os
 import os.path as osp
 import time
