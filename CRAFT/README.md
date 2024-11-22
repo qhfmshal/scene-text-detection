@@ -21,6 +21,7 @@ git clone을 통해 리포지터리를 다운 후, data_root_dir에 데이터 �
 ```
 
 config 폴더에 custom 데이터 훈련을 위한 yaml 파일 생성.
+
 예시) ICDAR_data_train.yaml
 
 학습 코드
