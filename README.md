@@ -39,7 +39,7 @@ ICDAR2017-MLT
 ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 |model| base | mixup  | cos_lr | batch 32 |
 |:------:|:------:|:------:|:------:|:------:|
-| YOLOv11n | 0.7313 | 0.7255 |      |      |
+| YOLOv11n | 0.7313 | 0.7255 | 0.6992 |      |
 | YOLOv11s | 0.7255 | 0.0000 |      |      |
 
 ### 3. Instructions
