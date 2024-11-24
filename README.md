@@ -30,7 +30,7 @@
 
 (base는 epoch 100, batch size 16)
 ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
-- YOLOv11n
+
   
 |hyper-parameter| f1 score | recall  | precision | 
 |:------:       |:------:  |:------: |:------:   |
@@ -40,7 +40,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 |     batch 32  |  0.6962  |         |           |
 |     cos_lr    |  0.6992  |         |           |
 
-
+- YOLOv11n
   - 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
   
   - cos_lr(cosine annealing scheduler)를 추가하여 학습한 결과, f1 score 0.6992로 기본 모델에 비해 소폭 하락.
