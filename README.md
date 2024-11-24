@@ -38,6 +38,9 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
 - [CRAFT 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/CRAFT)
 - YOLOv11 학습 코드 및 yaml 형태
+    - [colab 환경에서 학습](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_train_colab.ipynb)
+    - [단일 모델에서 추론 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_infer_ufo.ipynb)
+    - [두 개 이상의 모델에서 추론하여 WBF 수행 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_WBF.ipynb)
 ## 4. Approach
 ### Data
 - 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
