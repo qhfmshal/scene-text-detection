@@ -131,6 +131,6 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   
 - cos_lr
 
-- mosaic
+- mosaic : 이거 없이도 한 번 돌려보기
 
 ### WBF(Weighted Boxes Fusion)
