@@ -77,7 +77,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 |  top-5   |  0.7887  |   0.7161  |  0.8777   |
 
 - 모든 결과물들의 recall이 비슷한 순위의 다른 지원자들의 제출물보다 낮은 편이며, precision은 높은 편이다.
-  - 이는 예측된 bbox가 gt를 잘 포함하고 있긴 하지만, 놓치고 있는 gt가 많다는 의미
+  - 예측된 bbox가 gt를 잘 포함하고 있긴 하지만, 놓치고 있는 gt가 많다고 판단.
   - 따라서 precision이 높은 모델들의 WBF(Weighted Boxes Fusion) 진행
     
 - 제출물 중, precision이 높은 상위 4개의 모델을 앙상블 했을 때, f1 score 0.7808 기록.
