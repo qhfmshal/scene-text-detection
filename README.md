@@ -23,7 +23,7 @@
 | 100 epoch | 0.7277 | 0.3753 |
 - EAST와 YOLOv11 모델을 ICDAR2017-MLT 데이터와 기본 파라메터로 학습한 후, output 제출한 결과 각 f1 score 0.3753, 0.7277를 기록.
 
-- YOLOv11 모델을 하이퍼파라메터 튜닝하기로 결정.
+- YOLOv11 모델을 하이퍼 파라메터 튜닝하기로 결정.
   
 
 ### ICDAR2017-MLT-Aug 
@@ -54,7 +54,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   
   - degrees 10.0 : f1 score 0.7017로 기본 모델에 비해 성능 하락. precision은 0.9009으로 모델 중 최고 성능.
 
-  - 하이퍼파라메터에 대한 실험 결과, f1 score에 대한 개선은 없음.
+  - 하이퍼 파라메터에 대한 실험 결과, f1 score에 대한 개선은 없음.
 
 ### YOLOv11s
 
@@ -122,7 +122,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
 - deteval 확인 결과, 평가는 polygon을 rect로 변환하여 수행하므로 YOLOv11 모델도 사용.
 
-- 한정된 컴퓨팅 자원으로 하이퍼파라메터 실험들은 100 epoch에서 진행.
+- 한정된 컴퓨팅 자원으로 하이퍼 파라메터 튜닝은 100 epoch으로 진행.
 
 ### YOLO Hyper parameter
 - mixup
