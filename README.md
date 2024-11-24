@@ -11,7 +11,7 @@
   
 - 평가는 f1 score로 진행.
   
-### 2. Experimental results
+## 2. Experimental results
 
 - 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
   ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
@@ -45,8 +45,8 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 | YOLOv11n | 0.7313 | 0.7255 | 0.6992 |0.6962|0.7017|
 | YOLOv11s | 0.7577 | 0.0000 |      |      |      |
 
-### 3. Instructions
+## 3. Instructions
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
 - [CRAFT 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/CRAFT)
 - YOLOv11 학습 코드 및 yaml 형태
-### 4. Approach
+## 4. Approach
