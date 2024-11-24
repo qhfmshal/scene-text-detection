@@ -126,11 +126,20 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
 ### YOLO Hyper parameter
 - mixup
+
+  ![image](https://github.com/user-attachments/assets/67e1f4b9-e826-4b2c-b051-b7da6e604e30)
+  - 서로 다른 두 이미지와 bbox를 혼합하여, 새로운 이미지를 생성.
   
 - degrees
   
+  ![image](https://github.com/user-attachments/assets/757fd13d-e547-4d8d-8194-8f9450ab31be)
+
+  - 이미지를 회전.
+    
+- mosaic : 이거 없이도 한 번 돌려보기
+  ![image](https://github.com/user-attachments/assets/e6e56c6e-8707-4d76-8904-4d1ea9cd5aa2)
+
 - cos_lr
 
-- mosaic : 이거 없이도 한 번 돌려보기
 
 ### WBF(Weighted Boxes Fusion)
