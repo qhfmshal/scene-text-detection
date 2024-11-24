@@ -100,11 +100,12 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
     - [두 개 이상의 모델에서 추론하여 WBF 수행 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_WBF.ipynb)
 ## 4. Approach
 ### Data
-- 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
   
   ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
   ![1119_좌우반전_2](https://github.com/user-attachments/assets/188f3409-0ae8-4e0a-9c5e-291b1c57e88a)
   ![1119_좌우반전_1](https://github.com/user-attachments/assets/2df26729-6aab-4386-9271-6d8964b43142)
+
+- 위의 annotation을 시각화한 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
 
 - 띄어쓰기를 무시한 label도 존재.
   
@@ -131,3 +132,5 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - cos_lr
 
 - mosaic
+
+### WBF(Weighted Boxes Fusion)
