@@ -76,12 +76,13 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 |  top-3   |  0.7625  |   0.6724  |  0.8805   |
 |  top-4   |  0.7821  |   0.7022  |  0.8826   |
 |  top-5   |  0.7887  |   0.7161  |  0.8777   |
+|  top-6   |  0.7943  |   0.7281  |  0.8738   |
 
 - 모든 결과물들의 recall이 비슷한 순위의 다른 지원자들의 제출물보다 낮은 편이며, precision은 높은 편이다.
   - 예측된 bbox가 gt를 잘 포함하고 있긴 하지만, 놓치고 있는 gt가 많다고 판단.
   - 따라서 precision이 높은 모델들의 WBF(Weighted Boxes Fusion) 진행
     
-- 제출물 중, precision이 높은 상위 5개의 모델을 앙상블 했을 때, f1 score 0.7887 기록.
+- 제출물 중, precision이 높은 상위 6개의 결과를 앙상블 했을 때, f1 score 0.7943 기록.
 
 ## 3. Instructions
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
