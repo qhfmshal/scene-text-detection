@@ -12,13 +12,9 @@
 - 평가는 f1 score로 진행.
   
 ## 2. Experimental results
-
-- 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
-  ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
-  ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
   
 - 평가 코드를 보았을 때, polygon이 아니라 rect로 평가하는 것을 확인. ufo 데이터를 적절히 바꿔서 진행.
-- 
+  
 - 현재 데이터는 이미지 536장. ICDAR2017-MLT 전체를 학습데이터로 사용. ICDAR2017-MLT의 7,200개의 Train 데이터 중, 영어 및 한글을 포함하는 이미지 439개에 대하여 좌우 반전, 90도 회전한 이미지를 증강하여 1,317개의 추가 데이터 확보. 총 Train 8,517개 이미지, Validation 1,800개 이미지로 학습
   
 - 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 사용.
@@ -50,3 +46,7 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 - [CRAFT 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/CRAFT)
 - YOLOv11 학습 코드 및 yaml 형태
 ## 4. Approach
+### ICDAR2017-Korean Data
+- 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
+  ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
+  ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
