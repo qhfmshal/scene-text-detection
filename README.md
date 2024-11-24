@@ -5,7 +5,7 @@
 
 - 주제 : scene text detetion. 이미지 내에 존재하는 글자의 영역 좌표를 검출.
   
-- 데이터 : ICDAR2017-Korean 데이터. 536개의 한국어 및 영어가 포함된 이미지와 그에 상응하는 label(ufo) 파일. 추가적으로 ICDAR2017-MLT 데이터 사용 가능
+- 데이터 : ICDAR2017-Korean 데이터. 536개의 한국어 및 영어가 포함된 이미지와 그에 상응하는 label(ufo) 파일.
   
 - Baseline은 EAST 모델.
   
@@ -50,3 +50,7 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 - 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
   ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
   ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
+- 띄어쓰기를 무시한 label도 존재.
+- ICDAR2017-Korean Data의 개수는 536개. 데이터의 양을 늘리고, 일반화 성능을 올리기 위해, ICDAR2017-MLT도 학습 데이터로 사용.
+- eval 데이터에는 한국어와 영어만 존재하므로, ICDAR2017-MLT에서 한국어, 영어를 포함하는 이미지를 더 증강하여 사용.
+- ICDAR2017-MLT 내에는 439개의 한국어 및 영어를 포함한 이미지가 존재. 이 데이터들에 대하여 좌우반전, 시계 방향 90도 회전, 반시계 방향 90회전하여 439x3 = 1,317개의 데이터를 추가로 생성
