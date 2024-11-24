@@ -12,9 +12,7 @@
 - 평가는 f1 score로 진행.
   
 ## 2. Experimental results
-  
-- 평가 코드를 보았을 때, polygon이 아니라 rect로 평가하는 것을 확인. ufo 데이터를 적절히 바꿔서 진행.
-  
+    
 - 현재 데이터는 이미지 536장. ICDAR2017-MLT 전체를 학습데이터로 사용. ICDAR2017-MLT의 7,200개의 Train 데이터 중, 영어 및 한글을 포함하는 이미지 439개에 대하여 좌우 반전, 90도 회전한 이미지를 증강하여 1,317개의 추가 데이터 확보. 총 Train 8,517개 이미지, Validation 1,800개 이미지로 학습
   
 - 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 사용.
@@ -59,4 +57,4 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
   
 - ICDAR2017-MLT Train 내에는 439개의 한국어 및 영어를 포함한 이미지가 존재. 이 데이터들에 대하여 좌우반전, 시계 방향 90도 회전, 반시계 방향 90회전을 적용하여 439x3 = 1,317개의 데이터를 추가로 생성. 총 8,517개의 학습용 데이터 확보.
 
-- 
+- 평가 코드를 보았을 때, polygon이 아니라 rect로 변환하여 평가하는 것을 확인. polygon이 저장된 ufo 데이터를 rect로 바꿔서 진행.
