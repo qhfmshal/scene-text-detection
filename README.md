@@ -141,4 +141,4 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 ### WBF(Weighted Boxes Fusion)
 ![image](https://github.com/user-attachments/assets/45aad01f-3632-4566-bc5f-a71646c76f84)
 
-- 객체 탐지에서 여러 모델들의 output을 결합하는 방법. bbox를 ensemble 하는 것.
+- 객체 탐지에서 여러 모델들의 output을 결합하는 방법. bbox의 ensemble.
