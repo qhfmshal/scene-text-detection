@@ -144,7 +144,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   - 작은 object가 많은 경우, mosaic로 인해 성능이 저하될 수도 있으므로 적절히 조절.
   
 - cos_lr
-  - 학습률을 코사인 함수의 절반 주기마다 감소시켜, 학습 후반부에서 모델이 안정적으로 수렴하도록 도움.
+  - 학습률을 코사인 함수의 절반 주기마다 감소시켜, 학습 후반부에서 작은 학습률로 모델을 세밀하게 조정.
 
 ### WBF(Weighted Boxes Fusion)
 ![image](https://github.com/user-attachments/assets/45aad01f-3632-4566-bc5f-a71646c76f84)
