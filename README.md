@@ -112,9 +112,9 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - 평가 코드를 보았을 때, polygon이 아니라 rect로 변환하여 평가하는 것을 확인. polygon을 rect로 변환한 데이터도 학습 시도.
 
 ### Model
-- 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 사용.
+- 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 학습.
 
-- deteval 확인 결과, 평가는 polygon을 rect로 변환하여 수행하므로 YOLOv11 모델도 사용.
+- deteval.py 확인 결과, 평가는 polygon을 rect로 변환하여 수행하므로 YOLOv11 모델도 사용.
 
 - 한정된 컴퓨팅 자원으로 하이퍼 파라메터 튜닝은 100 epoch으로 진행.
 
