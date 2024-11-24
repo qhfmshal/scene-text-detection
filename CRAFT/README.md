@@ -28,3 +28,13 @@ config 폴더에 custom 데이터 훈련을 위한 yaml 파일 생성.
 ```
 python train.py --yaml=ICDAR_data_train
 ```
+
+
+## Acknowledgements
+This project uses EasyOCR, an open-source optical character recognition (OCR) tool.
+
+- **Tool**: EasyOCR  
+- **License**: [Apache License 2.0](https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE)  
+- **Repository**: [EasyOCR GitHub](https://github.com/JaidedAI/EasyOCR)
+
+EasyOCR is used for recognizing text in images and supports over 80 languages. For more details, visit the [EasyOCR website](https://github.com/JaidedAI/EasyOCR).
