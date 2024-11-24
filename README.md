@@ -19,8 +19,6 @@
 
 - 최종적으로 YOLOv11 모델을 선택하고, ICDAR2017-MLT-Aug(ICDAR2017-MLT을 증강한 8,517개의 데이터)를 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
   
-- YOLOv11n 기준 200에폭 학습에 10시간 내외 소요. 컴퓨팅 자원 및 시간이 부족하므로 하이퍼파라메터 실험을 최소화하고 bbox 앙상블을 통해 점수 향상 도모.
-
 - AdamW >> 학습이 잘 이루어지지 않아 훈련 멈춤.
 
 ICDAR2017-MLT
@@ -61,4 +59,6 @@ ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 - 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 사용.
 
 - deteval 확인 결과, 평가는 polygon을 rect로 변환하여 수행하므로 YOLOv11 모델도 사용.
+
+- 한정된 컴퓨팅 자원으로 하이퍼파라메터 실험들은 100 epoch에서 진행.
 
