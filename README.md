@@ -63,10 +63,10 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 |hyper-parameter| f1 score |   recall | precision | 
 |    :------:   | :------: | :------: |:------:   |
 |     base      |  0.7572  |  0.6524  |   0.9023  |
-
+|    degress    |    |   |     |
 - YOLOv11s
    - base : f1 score 0.7572를 기록.
-   - 
+   - degress :
   
 
 - 제출물 중, precision이 높은 상위 4개의 모델을 앙상블 했을 때, f1 score 0.7808 기록.
@@ -112,3 +112,11 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
 - 한정된 컴퓨팅 자원으로 하이퍼파라메터 실험들은 100 epoch에서 진행.
 
+### YOLO Hyper parameter
+- mixup
+  
+- degrees
+  
+- cos_lr
+
+- mosaic
