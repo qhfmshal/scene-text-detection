@@ -81,15 +81,6 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
     
 - 제출물 중, precision이 높은 상위 4개의 모델을 앙상블 했을 때, f1 score 0.7808 기록.
 
-
-
-|model| base | mixup  | degrees | batch 32 | cos_lr| 
-|:------:|:------:|:------:|:------:|:------:|:------:|
-| YOLOv11n | 0.7313 | 0.7255 | 0.7017 |0.6962|0.6992|
-| YOLOv11s | 0.7577 |        |        |      |      |
-
-
-
 ## 3. Instructions
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
   
