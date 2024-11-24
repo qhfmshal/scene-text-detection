@@ -46,7 +46,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
  
   - optimizer AdamW : 학습이 잘 이루어지지 않아 훈련 정지. SGD를 사용.
   
-  - cos_lr(cosine annealing scheduler) : f1 score 0.6992로 기본 모델에 비해 성능 하락.
+  - cos_lr(cosine annealing scheduler) : f1 score 0.6992로 기본 모델에 비해 성능 하락. 100 epoch에서는 큰 효과 없음.
   
   - mixup augmentation : f1 score 0.7255로 기본 모델에 비해 성능 하락.
   
@@ -78,6 +78,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - 모든 결과물들의 recall이 비슷한 순위의 다른 지원자들의 제출물보다 낮은 편이며, precision은 높은 편이다.
   - 이는 예측된 bbox가 gt를 잘 포함하고 있긴 하지만, 놓치고 있는 gt가 많다는 의미
   - 따라서 precision이 높은 모델들의 WBF(Weighted Boxes Fusion) 진행
+    
 - 제출물 중, precision이 높은 상위 4개의 모델을 앙상블 했을 때, f1 score 0.7808 기록.
 
 
@@ -98,6 +99,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
     - [colab 환경에서 학습](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_train_colab.ipynb)
     - [단일 모델에서 추론 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_infer_ufo.ipynb)
     - [두 개 이상의 모델에서 추론하여 WBF 수행 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_WBF.ipynb)
+      
 ## 4. Approach
 ### Data
   
@@ -134,12 +136,15 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   
   ![image](https://github.com/user-attachments/assets/757fd13d-e547-4d8d-8194-8f9450ab31be)
 
-  - 이미지를 회전.
+  - 주어진 각도의 범위에 한해서 이미지를 회전.
     
 - mosaic : 이거 없이도 한 번 돌려보기
   ![image](https://github.com/user-attachments/assets/e6e56c6e-8707-4d76-8904-4d1ea9cd5aa2)
-
+  - 사진 4개를 이어 붙여 새로운 이미지를 생성.
+  - 작은 object가 많은 경우, mosaic로 인해 성능이 저하될 수도 있으므로 적절히 조절.
+  
 - cos_lr
+  - 학습률을 코사인 함수의 절반 주기마다 감소시켜, 학습 후반부에서 모델이 안정적으로 수렴.
 
 
 ### WBF(Weighted Boxes Fusion)
