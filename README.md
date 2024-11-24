@@ -103,7 +103,9 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - 아래 사진들을 보았을 때, 좌우 반전된 글자 및 수직으로 쓰인 글자도 탐지해야함. 한국어 및 영어가 포함된 이미지를 좌우 반전 및 90도 회전하여 증강.
   ![1119_좌우반전_](https://github.com/user-attachments/assets/7a8c7e42-73e8-4259-a299-df5204013f36)
   ![1125_수직-](https://github.com/user-attachments/assets/03af9419-307d-48f6-8cb5-9e6c3bb6dace)
-  
+  ![1119_좌우반전_2](https://github.com/user-attachments/assets/188f3409-0ae8-4e0a-9c5e-291b1c57e88a)
+  ![1119_좌우반전_1](https://github.com/user-attachments/assets/2df26729-6aab-4386-9271-6d8964b43142)
+
 - 띄어쓰기를 무시한 label도 존재.
   
 - ICDAR2017-Korean Data의 개수는 536개. 데이터의 양을 늘리고, 일반화 성능을 올리기 위해, ICDAR2017-MLT도 학습 데이터로 사용.
