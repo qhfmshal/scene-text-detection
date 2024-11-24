@@ -9,7 +9,7 @@
   
 - Baseline은 EAST 모델.
   
-- 평가는 f1 score로 진행.
+- 평가는 Area Rcall과 Area Precision의 f1 score로 수행.
   
 ## 2. Experimental results
   
@@ -36,9 +36,13 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 | YOLOv11s | 0.7577 | 0.0000 |      |      |      |
 
 - 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
+  
 - cos_lr(cosine annealing scheduler)를 추가하여 학습한 결과, f1 score 0.6992로 기본 모델에 비해 소폭 하락.
+  
 - mixup augmentation을 추가하여 학습한 결과, f1 score 0.7255로 기본 모델에 비해 소폭 하락.
+  
 - batch 16에서 32로 변환한 결과, f1 score 0.6962로 기본 모델에 비해 소폭 하락.
+  
 - degrees를 10으로 설정하여 학습한 결과, f1 score 0.7017로 기본 모델에 비해 소폭 하락.
 
 ## 3. Instructions
