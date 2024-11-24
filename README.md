@@ -136,7 +136,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   
   ![image](https://github.com/user-attachments/assets/757fd13d-e547-4d8d-8194-8f9450ab31be)
 
-  - 주어진 각도의 범위에 한해서 이미지를 회전.
+  - 주어진 각도의 범위에 한해서 이미지를 회전. 다양한 각도에서 모델을 학습.
     
 - mosaic : 이거 없이도 한 번 돌려보기
   ![image](https://github.com/user-attachments/assets/e6e56c6e-8707-4d76-8904-4d1ea9cd5aa2)
@@ -147,3 +147,6 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   - 학습률을 코사인 함수의 절반 주기마다 감소시켜, 학습 후반부에서 모델이 안정적으로 수렴하도록 도움.
 
 ### WBF(Weighted Boxes Fusion)
+![image](https://github.com/user-attachments/assets/45aad01f-3632-4566-bc5f-a71646c76f84)
+
+- 객체 탐지에서 여러 모델들의 output을 결합하는 방법. bbox를 ensemble 하는 것.
