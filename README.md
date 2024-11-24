@@ -62,11 +62,12 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 |    :------:   | :------: | :------: |:------:   |
 |     base      |  0.7572  |  0.6524  | 0.9023 |
 |    degress    |  0.7646  |  0.6591  | 0.9101 |
+|    mosaic     |  0.0000  |  0.0000  | 0.0000 |
 
 - YOLOv11s
    - base : f1 score 0.7572를 기록.
-   - degress : f1 score 0.7646를 기록. YOLOv11s은 degrees 적용시, f1 score가 개선됐다.
-  
+   - degrees 10.0 : f1 score 0.7646를 기록. YOLOv11s은 degrees 적용시, f1 score가 개선됐다.
+   - mosaic 0.5 : 
 ### WBF
 |    WBF   | f1 score |   recall  | precision | 
 | :------: | :------: |  :------: |:------:   |
