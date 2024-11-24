@@ -59,7 +59,9 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   
 ## 3. Instructions
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
+  
 - [CRAFT 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/CRAFT)
+  
 - YOLOv11 학습 코드 및 yaml 형태
     - [colab 환경에서 학습](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_train_colab.ipynb)
     - [단일 모델에서 추론 후, output을 ufo 형태로 변환](https://github.com/qhfmshal/scene-text-detection/blob/main/yolo_infer_ufo.ipynb)
