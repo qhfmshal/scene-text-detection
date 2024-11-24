@@ -31,9 +31,9 @@
 (base는 epoch 100, batch size 16)
 ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
-|model| base | mixup  | cos_lr | batch 32 | degrees| 
+|model| base | mixup  | degrees | batch 32 | cos_lr| 
 |:------:|:------:|:------:|:------:|:------:|:------:|
-| YOLOv11n | 0.7313 | 0.7255 | 0.6992 |0.6962|0.7017|
+| YOLOv11n | 0.7313 | 0.7255 | 0.7017 |0.6962|0.6992|
 | YOLOv11s | 0.7577 |  |      |      |      |
 
 - 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
