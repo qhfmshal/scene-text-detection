@@ -31,6 +31,7 @@
 (base는 epoch 100, batch size 16)
 ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - YOLOv11n
+  
 |hyper-parameter| f1 score | recall  | precision | 
 |:------:       |:------:  |:------: |:------:   |
 |     base      |  0.7313  |         |           |
