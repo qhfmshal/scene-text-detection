@@ -26,7 +26,8 @@
   
 - opimizer : AdamW 학습이 잘 이루어지지 않아 훈련 멈춤.
 
-ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
+### ICDAR2017-MLT-Aug 
+(base는 epoch 100, batch size 16)
 |model| base | mixup  | cos_lr | batch 32 | degrees| 
 |:------:|:------:|:------:|:------:|:------:|:------:|
 | YOLOv11n | 0.7313 | 0.7255 | 0.6992 |0.6962|0.7017|
