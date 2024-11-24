@@ -17,14 +17,14 @@
 
 - 증강을 하지 않은 ICDAR2017-MLT 데이터로 EAST와 YOLOv11을 기본 파라메터로 학습한 후, output 제출한 결과 각 f1 score 0.3753, 0.7277를 기록.
   
-ICDAR2017-MLT
+### ICDAR2017-MLT
 |    | yolo | EAST  |
 |:------:|:------:|:------:|
 | 100 epoch | 0.7277 | 0.3753 |
 
-- 최종적으로 YOLOv11 모델을 선택하고, ICDAR2017-MLT-Aug(ICDAR2017-MLT을 증강한 8,517개의 데이터)를 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
+- 최종적으로 YOLOv11 모델을 하이퍼파라메터 튜닝하기로 결정하고, ICDAR2017-MLT-Aug(ICDAR2017-MLT을 증강한 8,517개의 데이터)를 기본 파라메터(pretrained는 False)로 학습한 결과 f1 score 0.7313를 기록.
   
-- AdamW >> 학습이 잘 이루어지지 않아 훈련 멈춤.
+- opimizer : AdamW 학습이 잘 이루어지지 않아 훈련 멈춤.
 
 ICDAR2017-MLT-Aug (base는 epoch 100, batch size 16)
 |model| base | mixup  | cos_lr | batch 32 | degrees| 
