@@ -82,7 +82,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   - 예측된 bbox가 gt를 잘 포함하고 있긴 하지만, 놓치고 있는 gt가 많다고 판단.
   - 따라서 precision이 높은 모델들의 WBF(Weighted Boxes Fusion) 진행
     
-- 제출물 중, precision이 높은 상위 6개의 결과를 앙상블 했을 때, f1 score 0.7943 기록.[가중치 파일](https://www.kaggle.com/models/choisukhyoun/precision_top6)
+- 제출물 중, precision이 높은 상위 6개의 결과를 앙상블 했을 때, f1 score 0.7943 기록. [가중치 파일](https://www.kaggle.com/models/choisukhyoun/precision_top6)
 
 ## 3. Instructions
 - [EAST 학습 코드 및 폴더 구조](https://github.com/qhfmshal/scene-text-detection/tree/main/EAST)
