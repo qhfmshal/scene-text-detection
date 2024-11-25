@@ -146,9 +146,8 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - 객체 탐지에서 여러 모델들의 output을 결합하는 방법. bbox의 ensemble.
 
 ## 5. Inference
-
+- 세로 글씨 및 작은 글씨 탐지.
 ![image](https://github.com/user-attachments/assets/9ed88fc6-ee02-40dc-97f2-590055abfb03)
-![image](https://github.com/user-attachments/assets/03ffc7b1-a5e2-4182-9a1a-0ad1b68e63a1)
 ![image](https://github.com/user-attachments/assets/0e2cde70-37b5-4dbb-ba92-4c3ae78a2849)
 ![image](https://github.com/user-attachments/assets/b808d888-0b4a-4101-8b4b-6ceb41f11938)
 ![image](https://github.com/user-attachments/assets/b836637c-1c0e-4e92-8cf9-32a4f5aa2167)
