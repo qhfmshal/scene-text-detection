@@ -160,10 +160,10 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
 ![image](https://github.com/user-attachments/assets/b836637c-1c0e-4e92-8cf9-32a4f5aa2167)
 
-- 도형을 글자로 오탐지.
+- 도형 및 무늬를 글자로 오탐지.
   
-![image](https://github.com/user-attachments/assets/4f7adf47-39f7-44cf-b268-f5b4f58567b3)
 ![image](https://github.com/user-attachments/assets/031487a7-38e7-4468-8a7e-8cfa50b3eb07)
+![image](https://github.com/user-attachments/assets/4f7adf47-39f7-44cf-b268-f5b4f58567b3)
 
 - 손글씨 탐지에 취약.
   
