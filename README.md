@@ -168,5 +168,3 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 - 손글씨 탐지에 취약.
   
 ![image](https://github.com/user-attachments/assets/1bae20e3-4560-4083-9e8f-88c8ef863577)
-
-
