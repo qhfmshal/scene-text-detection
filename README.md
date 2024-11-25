@@ -105,13 +105,13 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
 - 띄어쓰기를 무시한 label도 존재.
   
-- ICDAR2017-Korean Data의 개수는 536개. 데이터의 양을 늘리고, 일반화 성능을 올리기 위해, ICDAR2017-MLT도 학습 데이터로 사용.
+- ICDAR2017-Korean Data의 개수는 536개. 데이터의 양을 늘리고, 일반화 성능을 올리기 위해, ICDAR2017-MLT를 학습 데이터로 사용.
   
-- eval 데이터에는 한국어와 영어만 존재하므로, ICDAR2017-MLT에서 한국어, 영어를 포함하는 이미지를 증강.
+- eval 데이터에는 한국어와 영어만 존재하므로, ICDAR2017-MLT에서 한국어, 영어를 포함하는 이미지만 선별하여 증강.
   
 - ICDAR2017-MLT Train 내에는 439개의 한국어 및 영어를 포함한 이미지가 존재. 이 데이터들에 대하여 좌우반전, 시계 방향 90도 회전, 반시계 방향 90회전을 적용하여 439x3 = 1,317개의 데이터를 추가로 생성. 총 8,517개의 학습용 데이터 확보. Validation 데이터는 1,800개.
 
-- 평가 코드를 보았을 때, polygon이 아니라 rect로 변환하여 평가하는 것을 확인. polygon을 rect로 변환한 데이터도 학습 시도.
+- deteval.py 코드를 보았을 때, polygon이 아니라 rect로 변환하여 평가하는 것을 확인. polygon을 rect로 변환한 데이터도 학습에 활용.
 
 ### Model
 - 모델은 scene text detection 모델로 유명한 Baseline(EAST), CRAFT 모델 학습.
@@ -132,10 +132,10 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
 
   - 주어진 각도의 범위에 한해서 이미지를 회전. 다양한 각도에서 모델을 학습.
     
-- mosaic : 이거 없이도 한 번 돌려보기
+- mosaic
   ![image](https://github.com/user-attachments/assets/e6e56c6e-8707-4d76-8904-4d1ea9cd5aa2)
   - 사진 4개를 이어 붙여 새로운 이미지를 생성.
-  - 작은 object가 많은 경우, mosaic로 인해 성능이 저하될 수도 있으므로 적절히 조절.
+  - 작은 크기의 object가 많은 경우, mosaic로 인해 성능이 저하될 수도 있으므로 적절히 조절.
   
 - cos_lr(cosine annealing scheduler)
   - 학습률을 코사인 함수의 절반 주기마다 감소시켜, 학습 후반부에서 작은 학습률로 모델을 세밀하게 조정.
