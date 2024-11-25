@@ -133,7 +133,7 @@ ICDAR2017-MLT-Aug는 ICDAR2017-MLT을 증강한 8,517개의 데이터.
   - 주어진 각도의 범위에 한해서 이미지를 회전. 다양한 각도에서 모델을 학습.
     
 - mosaic
-- 
+  
   ![image](https://github.com/user-attachments/assets/e6e56c6e-8707-4d76-8904-4d1ea9cd5aa2)
   - 사진 4개를 이어 붙여 새로운 이미지를 생성.
   - 작은 크기의 object가 많은 경우, mosaic로 인해 성능이 저하될 수도 있으므로 적절히 조절.
